@@ -56,10 +56,10 @@ public class WordsGame {
 
         if (word.length() == 2) {
             String[] split = word.split("");
-            if (validSingleLetterL.equals(split[0])) {
+            if (validSingleLetterL.equals(split[0])) { //we found the last valid word - single letter. And that is the bottom of the recursion
                 discoveredWords.add(split[0]);
                 return;
-            } else if (validSingleLetterA.equals(split[1])) {
+            } else if (validSingleLetterA.equals(split[1])) { //we found the last valid word - single letter. And that is the bottom of the recursion
                 discoveredWords.add((split[1]));
                 return;
             } else {
